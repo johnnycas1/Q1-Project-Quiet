@@ -5,7 +5,11 @@
  *
  * Made By MaterializeCSS.com
  */
-
+body {
+  background: #E2E3E4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 nav ul a,
 nav .brand-logo {
   color: #ff8f00;
@@ -16,14 +20,14 @@ p {
 }
 
 .sidenav-trigger {
-  color: #ff8f00;
+  color: #E2E3E4;
 }
 
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: #E2E3E4;
 }
   .parallax-container .section {
     width: 100%;
@@ -54,4 +58,20 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.amber {
+ background: url('#');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+ #black{
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
