@@ -9,6 +9,11 @@ console.log('clicked');
 
 });
 
+$( "#arms" ).click(function () {
+    location.href = "arms.html";
+console.log('clicked');
+
+});
 
   var instance = M.Carousel.init({
       fullWidth: true,
