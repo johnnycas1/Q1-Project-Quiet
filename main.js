@@ -1,4 +1,13 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded",() => {
+console.log('ready');
+
+//this is a link to the leg's workout page//
+
+$( "#leg" ).click(function () {
+    location.href = "legworkout.html";
+console.log('clicked');
+
+});
 
 
   var instance = M.Carousel.init({
@@ -6,14 +15,21 @@ $(document).ready(function(){
       indicators: true
     });
 
-    // Or with jQuery
+    //Or with jQuery
 
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true
     });
 
-})
+
+});
+//
+$('.carousel-slider').carousel({fullWidth: true, padding:0},setTimeout(autoplay, 4500));
+ function autoplay() {
+   $('.carousel').carousel('next');
+   setTimeout(autoplay, 7500);
+    }
 
 var player;
 function onYouTubeIframeAPIReady() {
@@ -25,11 +41,5 @@ function onYouTubeIframeAPIReady() {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
     }
-  });
-}
-
-$('.carousel-slider').carousel({fullWidth: true, padding:0},setTimeout(autoplay, 4500));
- function autoplay() {
-   $('.carousel').carousel('next');
-   setTimeout(autoplay, 7500);
-    }
+  })
+  }
