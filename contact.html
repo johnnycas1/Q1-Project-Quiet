@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous">
-    </script>
-  <script type="text/javascript" src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Strukture</title>
@@ -17,10 +12,9 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <!-- NAV -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">Strukture</a>
+      <a id="logo-container" href="#" class="brand-logo">Strukture</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="content.html">Learn More!</a></li>
         <li><a href="index.html">Home</a></li>
@@ -28,6 +22,7 @@
         <li><a href="arms.html">Arms Workout </a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+<!-- NAV  -->
       <ul id="nav-mobile" class="sidenav">
         <li><a href="content.html">Learn More!</a></li>
         <li><a href="index.html">Home</a></li>
@@ -38,82 +33,53 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <!-- CONTENT -->
-  <!-- <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
- <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
+<!-- PARALLAX -->
 
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-
-      <h2>First Panel</h2>
-
-      <p class="white-text">This is your first panel</p>
-    </div>
-
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
+      <!-- Client side validation -->
+        <div class="container">
+          <div class="row">
+            <h1>Contact form</h1>
           </div>
+
+          <form class="col s12">
+          <div class="row">
+          <div class="input-field col s6">
+          <input id="first_name2" type="text" class="validate">
+          <label class="active" for="first_name2">First Name</label>
+          </div>
+
+          <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+          </div>
+          </div>
+          <div class="row">
+          <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+          </div>
+          <div class="row">
+          <div class="input-field col s12">
+          <input id="input_text" type="text" data-length="50">
+          <label for="input_text">Address</label>
+          </div>
+          </div>
+          <div class="row">
+          <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea1">Comments</label>
+          </div>
+          </div>
+          </div>
+
+        <div class="row center">
+          <br><br><h1 class="header left-align amber-text text-darken-3">Strukture</h1>
         </div>
-      </div> -->
-  <div class="card-image">
-  <div class="carousel carousel-slider left" data-indicators="true">
-    <div class="carousel-fixed-item center">
-
-    </div>
-    <div class="carousel-item center black white-text"  href="#one!">
-      <h2></h2>
-      <p id="head"class="white-text">YOUR ONLY LIMIT IS YOU</p>
-      <p  id="head"class="white-text">STAR NOW!</p>
-    </div>
-
-    <div class="carousel-item center black white-text">
-      <h2></h2>
-      <p id="leg" class="white-text">LEGS WORKOUT</p>
-      <!-- <button class="btn waves-effect white grey-text darken-text-2">Click here</button> -->
-    </div>
-    <div class="carousel-item center black white-text" href="#three!">
-      <h2></h2>
-      <p  id="arms"class="white-text">ARMS WORKOUT</p>
-    </div>
-    <div  class="carousel-item center black white-text" href="#four!">
-      <h2></h2>
-      <p id="abs"class="white-text">ABS WORKOUT</p>
-    </div>
-  </div>
-</div>
-<br>
-
-<!-- YOUTUBE VIDEOS AREA -->
-
-
-
+          </form>
+      </div>
 
 <!-- FOOTER -->
-
   <footer class="page-footer orange darken-3">
     <div class="container">
       <div class="row">
@@ -151,8 +117,7 @@
   </footer>
 
 
-  <!--  SCRIPTS-->
-
+  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>

@@ -1,7 +1,19 @@
+$(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+
+
 document.addEventListener("DOMContentLoaded",() => {
 console.log('ready');
 
-//this is a link to the leg's workout page//
+
+$( "#" ).click(function () {
+    location.href = "contact.html";
+console.log('clicked');
+
+});
+
+
 
 $( "#leg" ).click(function () {
     location.href = "legworkout.html";
@@ -11,6 +23,12 @@ console.log('clicked');
 
 $( "#arms" ).click(function () {
     location.href = "arms.html";
+console.log('clicked');
+
+});
+
+$( "#contact" ).click(function () {
+    location.href = "contact.html";
 console.log('clicked');
 
 });
