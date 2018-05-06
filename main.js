@@ -33,10 +33,10 @@ console.log('clicked');
 
 });
 
-  var instance = M.Carousel.init({
-      fullWidth: true,
-      indicators: true
-    });
+  // var instance = M.Carousel.init({
+  //     fullWidth: true,
+  //     indicators: true
+  //   });
 
     //Or with jQuery
 
@@ -48,10 +48,10 @@ console.log('clicked');
 
 });
 //
-$('.carousel-slider').carousel({fullWidth: true, padding:0},setTimeout(autoplay, 4500));
+$('.carousel-slider').carousel({fullWidth: true, padding:0});
  function autoplay() {
    $('.carousel').carousel('next');
-   setTimeout(autoplay, 7500);
+
     }
 
 var player;
