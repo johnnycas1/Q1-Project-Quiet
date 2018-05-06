@@ -4,6 +4,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
   <title>Strukture</title>
 
   <!-- CSS  -->
@@ -20,6 +21,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="legworkout.html">Legs workout</a></li>
         <li><a href="arms.html">Arms Workout </a></li>
+        <li><a href="abs.html">Abs Workout </a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
 <!-- NAV  -->
@@ -28,50 +30,68 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="legworkout.html">Legs workout</a></li>
         <li><a href="arms.html">Arms Workout </a></li>
+        <li><a href="abs.html">Abs Workout </a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-<!-- PARALLAX -->
+<!-- Contact Form-->
+
 
       <!-- Client side validation -->
         <div class="container">
           <div class="row">
             <h1>Contact form</h1>
           </div>
+          <form>
+          <div class="row">
 
-          <form class="col s12">
-          <div class="row">
-          <div class="input-field col s6">
-          <input id="first_name2" type="text" class="validate">
-          <label class="active" for="first_name2">First Name</label>
-          </div>
+        <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">Name</label>
+       </div>
 
-          <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-          </div>
-          </div>
-          <div class="row">
-          <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email" data-error="wrong" data-success="right">Email</label>
-          </div>
-          </div>
-          <div class="row">
-          <div class="input-field col s12">
-          <input id="input_text" type="text" data-length="50">
-          <label for="input_text">Address</label>
-          </div>
-          </div>
-          <div class="row">
-          <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+        <div class="input-field col s6">
+        <i class="material-icons prefix">phone</i>
+        <input id="icon_telephone" type="tel" class="validate">
+        <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" class="validate">
+        <label for="email" data-error="wrong" data-success="right">Email</label>
+        </div>
+
+
+        <div class="input-field col s6">
+        <i class="material-icons prefix">home</i>
+        <input id="input_text" type="text" data-length="50">
+        <label for="input_text">Address</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">comment</i>
+        <textarea id="textarea1" class="materialize-textarea" data-length="60"></textarea>
           <label for="textarea1">Comments</label>
           </div>
-          </div>
-          </div>
+        </div>
+        <div class="row">
+        <div class = " button center black">
+        <button class = "btn waves-effect waves-light black" type = "submit">Send<i class = "material-icons right">send</i>
+        </button>
+      </div>
+      </div>
+      </div>
+      </form>
+
+        </div>
+
 
         <div class="row center">
           <br><br><h1 class="header left-align amber-text text-darken-3">Strukture</h1>

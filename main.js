@@ -27,8 +27,8 @@ console.log('clicked');
 
 });
 
-$( "#contact" ).click(function () {
-    location.href = "contact.html";
+$( "#abs" ).click(function () {
+    location.href = "abs.html";
 console.log('clicked');
 
 });
