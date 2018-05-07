@@ -84,3 +84,7 @@ border-radius: 20px;
 iframe {
   margin: 0;
 }
+
+h4 {
+  font-weight: bolder;
+}

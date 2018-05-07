@@ -55,11 +55,11 @@ console.log('clicked');
 
 });
 //
-$('.carousel-slider').carousel({fullWidth: true, padding:0});
- function autoplay() {
-   $('.carousel').carousel('next');
-
-    }
+// $('.carousel-slider').carousel({fullWidth: true, padding:0});
+//  function autoplay() {
+//    $('.carousel').carousel('next');
+//
+//     }
 
 var player;
 function onYouTubeIframeAPIReady() {
