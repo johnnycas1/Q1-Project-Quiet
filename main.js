@@ -22,11 +22,13 @@
         location.href = "arms.html";
     });
 
-
     $( "#abs1" ).click(function () {
         location.href = "abs.html";
     });
 
+    $( "#contact" ).click(function () {
+        location.href = "contact.html";
+    });
 
 //TEST CODE//
 
