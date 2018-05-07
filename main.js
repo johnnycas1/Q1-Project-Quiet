@@ -14,11 +14,7 @@
     //
     // });
 
-    $( "#workout" ).click(function () {
-        location.href = "legworkout.html";
-    });
-
-    $( "#leg" ).click(function () {
+    $( "#leg1" ).click(function () {
         location.href = "legworkout.html";
     });
 
