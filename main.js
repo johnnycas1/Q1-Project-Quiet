@@ -6,14 +6,19 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded",() => {
 console.log('ready');
 
+//TO BE CHECKED FOR FUNCTIONALITY//
 
-$( "#" ).click(function () {
-    location.href = "contact.html";
+// $( "#" ).click(function () {
+//     location.href = "contact.html";
+// console.log('clicked');
+//
+// });
+
+$( "#workout" ).click(function () {
+    location.href = "legworkout.html";
 console.log('clicked');
 
 });
-
-
 
 $( "#leg" ).click(function () {
     location.href = "legworkout.html";
@@ -32,6 +37,8 @@ $( "#abs" ).click(function () {
 console.log('clicked');
 
 });
+
+//TEST CODE//
 
   // var instance = M.Carousel.init({
   //     fullWidth: true,
