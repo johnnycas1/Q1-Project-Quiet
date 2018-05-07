@@ -15,8 +15,9 @@ nav .brand-logo {
   color: #ff8f00;
 }
 
-p {
+#p {
   line-height: 2rem;
+  text-align: justify;
 }
 
 .sidenav-trigger {
@@ -82,7 +83,10 @@ border-radius: 20px;
 }
 
 iframe {
-  margin: 0;
+
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 6rem 0 1.5rem 0;
 }
 
 h4 {
