@@ -18,19 +18,15 @@
         location.href = "legworkout.html";
     });
 
-    $( "#arms" ).click(function () {
-        location.href = "arms.html";
-    });
-    $( "#arms2line" ).click(function () {
+    $( "#arms1" ).click(function () {
         location.href = "arms.html";
     });
 
-    $( "#abs" ).click(function () {
+
+    $( "#abs1" ).click(function () {
         location.href = "abs.html";
     });
-    $( "#abs2line" ).click(function () {
-        location.href = "abs.html";
-    });
+
 
 //TEST CODE//
 
