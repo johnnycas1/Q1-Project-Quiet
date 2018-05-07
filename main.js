@@ -1,42 +1,40 @@
-$(document).ready(function() {
-    $('input#input_text, textarea#textarea1').characterCounter();
-  });
+    $(document).ready(function() {
+        $('input#input_text, textarea#textarea1').characterCounter();
+      });
 
 
-document.addEventListener("DOMContentLoaded",() => {
-console.log('ready');
+    document.addEventListener("DOMContentLoaded",() => {
+    console.log('ready');
 
-//TO BE CHECKED FOR FUNCTIONALITY//
+    //TO BE CHECKED FOR FUNCTIONALITY//
 
-// $( "#" ).click(function () {
-//     location.href = "contact.html";
-// console.log('clicked');
-//
-// });
+    // $( "#" ).click(function () {
+    //     location.href = "contact.html";
+    // console.log('clicked');
+    //
+    // });
 
-$( "#workout" ).click(function () {
-    location.href = "legworkout.html";
-console.log('clicked');
+    $( "#workout" ).click(function () {
+        location.href = "legworkout.html";
+    });
 
-});
+    $( "#leg" ).click(function () {
+        location.href = "legworkout.html";
+    });
 
-$( "#leg" ).click(function () {
-    location.href = "legworkout.html";
-console.log('clicked');
+    $( "#arms" ).click(function () {
+        location.href = "arms.html";
+    });
+    $( "#arms2line" ).click(function () {
+        location.href = "arms.html";
+    });
 
-});
-
-$( "#arms" ).click(function () {
-    location.href = "arms.html";
-console.log('clicked');
-
-});
-
-$( "#abs" ).click(function () {
-    location.href = "abs.html";
-console.log('clicked');
-
-});
+    $( "#abs" ).click(function () {
+        location.href = "abs.html";
+    });
+    $( "#abs2line" ).click(function () {
+        location.href = "abs.html";
+    });
 
 //TEST CODE//
 
@@ -51,9 +49,9 @@ console.log('clicked');
       fullWidth: true,
       indicators: true
     });
-
-
 });
+
+// TEST CODE TO MAKE THE CAROUSEL AUTOPLAY
 //
 // $('.carousel-slider').carousel({fullWidth: true, padding:0});
 //  function autoplay() {
