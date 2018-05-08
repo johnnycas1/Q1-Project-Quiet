@@ -64,4 +64,13 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
     }
   })
+
+  $(document).on('mouseover', '#player', function() {
+    player.playVideo();
+  });
+  $(document).on('mouseout', '#player', function() {
+    player.pauseVideo();
+  });
+
+
   }
