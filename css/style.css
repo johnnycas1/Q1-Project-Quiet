@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 nav ul a,
 nav .brand-logo {
   color: #ff8f00;
@@ -34,9 +35,10 @@ nav .brand-logo {
   height: auto;
   color: #E2E3E4;
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -57,6 +59,7 @@ nav .brand-logo {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -69,10 +72,10 @@ footer.page-footer {
  background: url('#');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
  #leg, #arms, #abs, #head, #workout, #arms2line, #abs2line {
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: white;
   font-weight: bold;
   font-size: 50px;
@@ -80,6 +83,7 @@ footer.page-footer {
   background-size: cover;
 
 }
+
 #leg1 {
   color: #b7f00c
 }
@@ -102,4 +106,9 @@ h4 {
 
 h1 {
  text-align: center
+}
+
+.carousel-item{
+  /* background: #790103; */
+  background: #f8960f;
 }
