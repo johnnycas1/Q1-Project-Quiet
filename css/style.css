@@ -13,7 +13,7 @@ body {
 
 nav ul a,
 nav .brand-logo {
-  color: #ff8f00;
+  color: #ef6c00;
 }
 
 #p {
@@ -66,6 +66,7 @@ nav .brand-logo {
 
 footer.page-footer {
   margin: 0;
+
 }
 
 .amber {
@@ -110,5 +111,5 @@ h1 {
 
 .carousel-item{
   /* background: #790103; */
-  background: #f8960f;
+  background: #ef6c00;
 }
