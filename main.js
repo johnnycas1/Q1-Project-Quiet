@@ -1,50 +1,43 @@
     $(document).ready(function() {
+      console.log('ready master Johnny');
 
-
-  $( "#logo-container" ).mouseenter(function() {
-    $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '3em'}).mouseleave(function() {
-$(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
-    })
-});
-
-$( "#logo-container1" ).mouseenter(function() {
-  $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '5em'}).mouseleave(function() {
-$(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
-  })
-});
-
-  $('#calltoAction2').mouseover(function(){
-    console.log('clicked');
-    $(this).animate({fontSize: '4em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '2.5em'}, 'slow')
+    $( "#logo-container" ).mouseenter(function() {
+      $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '3em'}).mouseleave(function() {
+      $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
+      })
     });
-  })
 
-  $('#chesttext').mouseover(function(){
-    $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
+    $( "#logo-container1" ).mouseenter(function() {
+      $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '5em'}).mouseleave(function() {
+      $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
+      })
     });
-  })
 
-  $('#girlpushup').mouseover(function(){
-    $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
-    });
-  })
-  $('#contact1').mouseover(function(){
-    $(this).css({color:'#ef6c00'})
-   })
-   $('#calltoAction').mouseover(function(){
-     $(this).css({color:'#790103'})
+    $('#chesttext').mouseover(function(){
+      $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
+        $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
+      });
     })
 
-    //TO BE CHECKED FOR FUNCTIONALITY//
+    $('#girlpushup').mouseover(function(){
+      $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
+        $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
+      });
+    })
 
-    // $( "#" ).click(function () {
-    //     location.href = "contact.html";
-    // console.log('clicked');
-    //
-    // });
+    $('#contact1').mouseover(function(){
+      $(this).css({color:'#ef6c00'})
+     })
+
+    $('#calltoAction').mouseover(function(){
+      $(this).css({color:'#790103'})
+    })
+
+    $('#calltoAction2').mouseover(function(){
+      $(this).animate({fontSize: '4em'}, 'slow').mouseleave(function(){
+        $(this).animate({fontSize: '2.5em'}, 'slow')
+      });
+    })
 
     $( "#leg1" ).click(function () {
         location.href = "legworkout.html";
@@ -62,31 +55,10 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
         location.href = "contact.html";
     });
 
-//TEST CODE//
-
-  // var instance = M.Carousel.init({
-  //     fullWidth: true,
-  //     indicators: true
-  //   });
-
-    //Or with jQuery
-
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true
     });
-
-
-// TEST CODE TO MAKE THE CAROUSEL AUTOPLAY
-//
-// $('.carousel-slider').carousel({fullWidth: true, padding:0});
-//  function autoplay() {
-//    $('.carousel').carousel('next');
-//
-//     }
-
-
-
 
     var player;
     function onYouTubeIframeAPIReady() {
@@ -100,25 +72,25 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
         }
       })
     }
-//making the bmi calculator//
+   //making the bmi calculator//
 
-function getYourBmi() {
+    function getYourBmi() {
 
-     var height = Number(document.getElementById("height").value);
-     var heightunits = document.getElementById("heightunits").value;
+        var height = Number(document.getElementById("height").value);
+        var heightunits = document.getElementById("heightunits").value;
 
-     var BMI = weight / Math.pow(height, 2);
+        var BMI = weight / Math.pow(height, 2);
 
-document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
-     if (BMI < 18.5) document.getElementById("comment").innerHTML = "Underweight";
-     if (BMI >= 18.5 && BMI <= 25) document.getElementById("comment").innerHTML = "Normal";
-     if (BMI >= 25 && BMI <= 30) document.getElementById("comment").innerHTML = "Obese";
-     if (BMI > 30) document.getElementById("comment").innerHTML = "Overweight";
-     document.getElementById("answer").value = output;
- }
+    document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
+        if (BMI < 18.5) document.getElementById("comment").innerHTML = "Underweight";
+        if (BMI >= 18.5 && BMI <= 25) document.getElementById("comment").innerHTML = "Normal";
+        if (BMI >= 25 && BMI <= 30) document.getElementById("comment").innerHTML = "Obese";
+        if (BMI > 30) document.getElementById("comment").innerHTML = "Overweight";
+        document.getElementById("answer").value = output;
+     }
 
 
 
- M.AutoInit();
+     M.AutoInit();
 
-});
+    });
