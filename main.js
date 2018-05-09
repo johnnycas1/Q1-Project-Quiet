@@ -13,29 +13,30 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
   })
 });
 
-  $('#head1').mouseover(function(){
+  $('#calltoAction2').mouseover(function(){
     console.log('clicked');
-    $(this).animate({fontSize: '6em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '3em'}, 'slow')
+    $(this).animate({fontSize: '4em'}, 'slow').mouseleave(function(){
+      $(this).animate({fontSize: '2.5em'}, 'slow')
     });
   })
 
   $('#chesttext').mouseover(function(){
     $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#039be5'})
+      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
     });
   })
 
   $('#girlpushup').mouseover(function(){
     $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
-      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#039be5'})
+      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#ef6c00'})
     });
   })
   $('#contact1').mouseover(function(){
-    console.log('clicked');
-    $(this).css({color:'#039be5'})
+    $(this).css({color:'#ef6c00'})
    })
-
+   $('#calltoAction').mouseover(function(){
+     $(this).css({color:'#790103'})
+    })
 
     //TO BE CHECKED FOR FUNCTIONALITY//
 
