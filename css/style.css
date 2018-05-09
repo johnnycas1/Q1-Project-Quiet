@@ -121,6 +121,13 @@ h1 {
   background: #ef6c00;
 }
 
-:hover{
+#containerx {
+  border-radius: 6px;
+background: #ef6c00;
 
+}
+
+#weight, #height {
+border: 0;
+  text-decoration: none;
 }

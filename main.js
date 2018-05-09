@@ -1,6 +1,6 @@
     $(document).ready(function() {
 
-    // $( "#logo-container" ).mouseenter( color:red ).mouseleave( color:orange );
+
 
 
   $( "#logo-container" ).mouseenter(function() {
@@ -14,7 +14,7 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
     $(this).animate({fontSize: '6em'}, 'slow').mouseleave(function(){
       $(this).animate({fontSize: '3em'}, 'slow')
     });
-    // $(this).css({'font-size': '200%'})
+
 
   })
 
@@ -22,8 +22,7 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
     console.log('clicked');
     $(this).css({color:'#039be5'})
   })
-    // $( this ).fadeOut( 900 );
-    // $( this ).fadeIn( 700 );
+
 
 });
 
@@ -90,5 +89,25 @@ function onYouTubeIframeAPIReady() {
     }
   })
 }
+
+
+
+//making the bmi meter//
+
+
+function getYourBmi() {
+
+     var height = Number(document.getElementById("height").value);
+     var heightunits = document.getElementById("heightunits").value;
+
+     var BMI = weight / Math.pow(height, 2);
+  
+document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
+     if (BMI < 18.5) document.getElementById("comment").innerHTML = "Underweight";
+     if (BMI >= 18.5 && BMI <= 25) document.getElementById("comment").innerHTML = "Normal";
+     if (BMI >= 25 && BMI <= 30) document.getElementById("comment").innerHTML = "Obese";
+     if (BMI > 30) document.getElementById("comment").innerHTML = "Overweight";
+     document.getElementById("answer").value = output;
+ }
 
 });
