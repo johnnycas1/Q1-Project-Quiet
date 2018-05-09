@@ -5,7 +5,13 @@
     $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '3em'}).mouseleave(function() {
 $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
     })
+});
 
+$( "#logo-container1" ).mouseenter(function() {
+  $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '5em'}).mouseleave(function() {
+$(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
+  })
+});
 
   $('#head1').mouseover(function(){
     console.log('clicked');
@@ -14,11 +20,22 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
     });
   })
 
+  $('#chesttext').mouseover(function(){
+    $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
+      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#039be5'})
+    });
+  })
+
+  $('#girlpushup').mouseover(function(){
+    $(this).animate({fontSize: '3em'}, 'slow').mouseleave(function(){
+      $(this).animate({fontSize: '3em'}, 'slow').css({color:'#039be5'})
+    });
+  })
   $('#contact1').mouseover(function(){
     console.log('clicked');
     $(this).css({color:'#039be5'})
    })
- });
+
 
     //TO BE CHECKED FOR FUNCTIONALITY//
 
@@ -98,5 +115,9 @@ document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
      if (BMI > 30) document.getElementById("comment").innerHTML = "Overweight";
      document.getElementById("answer").value = output;
  }
+
+
+
+ M.AutoInit();
 
 });
