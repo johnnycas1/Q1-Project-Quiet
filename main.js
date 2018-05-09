@@ -1,10 +1,32 @@
     $(document).ready(function() {
-        $('input#input_text, textarea#textarea1').characterCounter();
-      });
+
+    // $( "#logo-container" ).mouseenter( color:red ).mouseleave( color:orange );
 
 
-    document.addEventListener("DOMContentLoaded",() => {
-    console.log('ready');
+  $( "#logo-container" ).mouseenter(function() {
+    $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '3em'}).mouseleave(function() {
+$(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
+    })
+
+
+  $('#head1').mouseover(function(){
+    console.log('clicked');
+    $(this).animate({fontSize: '6em'}, 'slow').mouseleave(function(){
+      $(this).animate({fontSize: '3em'}, 'slow')
+    });
+    // $(this).css({'font-size': '200%'})
+
+  })
+
+  $('#contact1').mouseover(function(){
+    console.log('clicked');
+    $(this).css({color:'#039be5'})
+  })
+    // $( this ).fadeOut( 900 );
+    // $( this ).fadeIn( 700 );
+
+});
+
 
     //TO BE CHECKED FOR FUNCTIONALITY//
 
@@ -43,7 +65,7 @@
       fullWidth: true,
       indicators: true
     });
-});
+
 
 // TEST CODE TO MAKE THE CAROUSEL AUTOPLAY
 //
@@ -52,6 +74,9 @@
 //    $('.carousel').carousel('next');
 //
 //     }
+
+
+
 
 var player;
 function onYouTubeIframeAPIReady() {
@@ -64,13 +89,6 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
     }
   })
+}
 
-  $(document).on('mouseover', '#player', function() {
-    player.playVideo();
-  });
-  $(document).on('mouseout', '#player', function() {
-    player.pauseVideo();
-  });
-
-
-  }
+});

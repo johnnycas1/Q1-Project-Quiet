@@ -85,6 +85,13 @@ footer.page-footer {
 
 }
 
+#head1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
 #leg1 {
   color: #b7f00c
 }
@@ -112,4 +119,8 @@ h1 {
 .carousel-item{
   /* background: #790103; */
   background: #ef6c00;
+}
+
+:hover{
+
 }
