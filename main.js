@@ -1,8 +1,6 @@
     $(document).ready(function() {
 
 
-
-
   $( "#logo-container" ).mouseenter(function() {
     $(this).animate({ 'color': 'orange-text text-darken-3', 'font-size': '3em'}).mouseleave(function() {
 $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
@@ -14,18 +12,13 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
     $(this).animate({fontSize: '6em'}, 'slow').mouseleave(function(){
       $(this).animate({fontSize: '3em'}, 'slow')
     });
-
-
   })
 
   $('#contact1').mouseover(function(){
     console.log('clicked');
     $(this).css({color:'#039be5'})
-  })
-
-
-});
-
+   })
+ });
 
     //TO BE CHECKED FOR FUNCTIONALITY//
 
@@ -77,23 +70,19 @@ $(this).animate({'color': 'orange-text text-darken-3' ,'font-weight': 'bold'});
 
 
 
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: 'player_uid_312879083_1',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'player_uid_312879083_1',
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      })
     }
-  })
-}
-
-
-
-//making the bmi meter//
-
+//making the bmi calculator//
 
 function getYourBmi() {
 
@@ -101,7 +90,7 @@ function getYourBmi() {
      var heightunits = document.getElementById("heightunits").value;
 
      var BMI = weight / Math.pow(height, 2);
-  
+
 document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
      if (BMI < 18.5) document.getElementById("comment").innerHTML = "Underweight";
      if (BMI >= 18.5 && BMI <= 25) document.getElementById("comment").innerHTML = "Normal";
