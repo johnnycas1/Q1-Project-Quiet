@@ -16,6 +16,9 @@ nav .brand-logo {
   color: #ef6c00;
 }
 
+a.sidenav-trigger i {
+  color: #ef6c00;
+}
 #p {
   line-height: 2rem;
   text-align: justify;
