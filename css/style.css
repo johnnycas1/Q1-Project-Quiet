@@ -134,3 +134,7 @@ background: #ef6c00;
 border: 0;
   text-decoration: none;
 }
+
+#button:hover {
+color: black;
+}
