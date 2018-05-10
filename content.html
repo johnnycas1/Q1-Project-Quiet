@@ -20,7 +20,7 @@ document.bmiForm.meaning.value = "You are overweight."
 }
 }
 else{
-alert("Please Fill in everything correctly")
+alert("Please make sure all required fields are filled out correctly")
 }
 }
 
@@ -108,35 +108,20 @@ alert("Please Fill in everything correctly")
 <div id="containerx"class="container">
     <div class="row">
       <div class="col s12 center">
+        <h4 class="center" style="color: black">What is your BMI?</h4><br>
         <form name="bmiForm">
-Your Weight(kg): <input type="text" name="weight" size="10"><br />
-Your Height(cm): <input type="text" name="height" size="10"><br />
-<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
-Your BMI: <input type="text" name="bmi" size="10"><br />
-This Means: <input type="text" name="meaning" size="25"><br />
-<input type="reset" value="Reset" />
+<h5 class="text">Enter your Weight(kg):</h5> <input type="text" name="weight" br />
+<h5> Enter your Height(cm): </h5><input type="text" name="height" size="10"><br />
+<input class="btn-large orange darken-3 flow-text" id= "button" type="button" value="Click" onClick="calculateBmi()"><br />
+<h5>Your BMI is: </h5><input type="text" name="bmi" size="10"><br />
+<h5>This Means for now!!!: </h5><input type="text" name="meaning" size="25"><br />
+<input class="btn-large orange darken-3 flow-text" id= "button" type="reset" value="Reset" />
 </form>
 </div>
 </div>
 </div
-       <!-- 
 
-        <p>Enter your Height:
-          <input class="center" type="text" id="height"/>
-          <select type="multiple" id="heightunits">
-            <option value="metres" selected="selected">metres</option>
-            <option value="inches">inches</option>
-        </select>
-         </p>
-        <p>Enter your Weight:
-          <input class="center" type="text" id="weight"/>
-          <select type="multiple" id="weightunits">
-            <option value="kg" selected="selected">kilograms</option>
-            <option value="lb">pounds</option>
-        </select>
-          </p>
           <input type="submit" value="Click" id= "button" class="btn-large orange darken-3 flow-text" onclick="computeBMI()"/>
-          <h4>Your BMI is: <span id="output"></span></h4>
           <h3 class="center" style="color: black">You are: <span id='comment'></span> </h3> -->
           <!-- </div>
         </div>
