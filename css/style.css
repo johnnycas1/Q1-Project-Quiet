@@ -11,6 +11,12 @@ body {
   background-size: cover;
 }
 
+
+#logo-container{
+  text-align: left;
+  font-size: 60px;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #ef6c00;
@@ -35,7 +41,7 @@ a.sidenav-trigger i {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
+  height: 700px;
   color: #E2E3E4;
 }
 
@@ -117,10 +123,11 @@ h4 {
 
 h1 {
  text-align: center
-}
+ }
 
 .carousel-item{
   background: #ef6c00;
+  overflow: auto;
 }
 
 #containerx {
@@ -146,4 +153,15 @@ h1 {
                "Segoe UI Emoji", /* Emojis*/
                "Segoe UI Symbol"; /* Emojis*/
   color: black;
+}
+
+#input {
+  font-size: 20px;
+}
+
+#quote1 {
+  font-family: fantasy;
+  font-weight: bold;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.87);
 }

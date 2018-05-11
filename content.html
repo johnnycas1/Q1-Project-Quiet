@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script language="JavaScript">
 
-function calculateBmi() {
-var weight = document.bmiForm.weight.value
-var height = document.bmiForm.height.value
-if(weight > 0 && height > 0){
-var finalBmi = weight/(height/100*height/100)
-document.bmiForm.bmi.value = finalBmi
-if(finalBmi < 18.5){
-document.bmiForm.meaning.value = "You are too thin."
-}
-if(finalBmi > 18.5 && finalBmi < 25){
-document.bmiForm.meaning.value = "You are healthy."
-}
-if(finalBmi > 25){
-document.bmiForm.meaning.value = "You are overweight."
-}
-}
-else{
-alert("Please make sure all required fields are filled out correctly")
-}
-}
-
-</script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
     </script>
-  <script type="text/javascript" src="main.js"></script>
+  <script src="main.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Strukture</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
+<body
+
+background-image: url("anatomy-physiology-featured.jpeg");
+background-repeat: no-repeat;
+/>
   <!-- NAV -->
-  <nav class="white" role="navigation">
+  <nav class="white">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo">Strukture</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="content.html">Learn More!</a></li>
         <li><a href="index.html">Home</a></li>
+        <li><a href="content1.html">Stretching</a></li>
         <li><a href="legworkout.html">Legs workout</a></li>
         <li><a href="arms.html">Arms Workout </a></li>
         <li><a href="abs.html">Abs Workout </a></li>
@@ -56,6 +37,7 @@ alert("Please make sure all required fields are filled out correctly")
       <ul id="nav-mobile" class="sidenav">
         <li><a href="content.html">Learn More!</a></li>
         <li><a href="index.html"><i class="material-icons orange-text text-darken-3">home</i>Home</a></li>
+        <li><a href="content1.html"><i class="material-icons orange-text text-darken-3">fitness_center</i>Stretching</a></li>
         <li><a href="legworkout.html"><i class="material-icons orange-text text-darken-3">fitness_center</i>Legs workout</a></li>
         <li><a href="arms.html"><i class="material-icons orange-text text-darken-3">fitness_center</i>Arms Workout </a></li>
         <li><a href="abs.html"><i class="material-icons orange-text text-darken-3">fitness_center</i>Abs Workout </a></li>
@@ -73,13 +55,13 @@ alert("Please make sure all required fields are filled out correctly")
     </div>
     <div class="carousel-item center white-text">
       <h2></h2>
-      <p id="calltoAction"class="">YOUR ONLY LIMIT IS <span style="color: ">YOU!</span></p>
-      <p id="calltoAction2"class="">START NOW!</p>
-      <i id="arrow_downward"class="material-icons">arrow_downward</i>
+      <p id="calltoAction">YOUR ONLY LIMIT IS <span>YOU!</span></p>
+      <p id="calltoAction2">START NOW!</p>
+      <i id="arrow_downward" class= "material-icons" >arrow_downward</i>
 
     </div>
 
-    <div class="carousel-item center  white-text col s12" >
+    <div class= "carousel-item center  white-text col s12" >
       <h2></h2>
       <p id="leg" class="white-text center">LEGS WORKOUT</p>
 
@@ -99,54 +81,45 @@ alert("Please make sure all required fields are filled out correctly")
 </div>
 </div>
 
-<div class="row ">
-<h4 class="center" style="color: black">ARE YOU READY!</h4>
-  <div class="col s12 center">
-<h5 id="p">Before you start exercising. If you have spent a long time without stepping on a gym, we recommend that you go little by little, without forcing yourself. <br> Do not try to do in a couple of days, everything you haven't done in years, that's why it's better to be prudent and move forward with the exercises over time. If, on the contrary, you are used to doing some exercises, but do not lift weights, do not think that this is going to be easy. </h5>
-</div>
-</div>
 
-  <div class="row">
 
+  <div class="row center-align">
     <h4 class="center" style="color: black">What is your BMI? </h4>
     <div class="col s12 center">
-    <h5 id="p">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h5>
-
-<h5>Enter your weight and height using metric measures:</h5>
+      <h5 id="p">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h5>
+      <h5>Enter your weight and height using metric measures:</h5>
     </div>
   </div>
 
 
 
-<div id="containerx"class="container">
+  <div id="containerx" class="container">
     <div class="row">
       <div class="col s12 center">
         <h4 class="center" style="color: black">Let's get your body mass index:</h4><br>
         <form name="bmiForm">
-<h5 class="text">Enter your Weight(kg):</h5> <input type="text" name="weight" br />
-<h5> Enter your Height(cm): </h5><input type="text" name="height" size="10"><br />
-<input class="btn-large orange darken-3 flow-text" id= "button" type="button" value="Click" onClick="calculateBmi()"><br />
-<h5>Your BMI is: </h5><input type="text" name="bmi" size="10"><br />
-<h5>This means that for now: </h5><input type="text" name="meaning" size="25"><br />
-<input class="btn-large orange darken-3 flow-text" id= "button" type="reset" value="Reset"/>
-</form>
-</div>
-</div>
-</div
+          <h5 class="text">Enter your Weight(kg):</h5> <input type="text" name="weight"/>
+          <h5> Enter your Height(cm): </h5><input type="text" name="height" size="10"><br />
+          <input class="btn-large orange darken-3 flow-text" id= "button" type="button" value="Click" onClick="calculateBmi()"><br />
+          <h5>Your BMI is: </h5><input type="text" name="bmi" size="10"><br />
+          <h5>This means that for now: </h5><input id="input1" type="text" name="meaning" size="30"><br />
+          <input class="btn-large orange darken-3 flow-text" id= "button" type="reset" value="Reset"/>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
+ <div class="container">
 <div class="row">
-<div class="col s12 l6">
-  <h4 class="center">Streching Rutine</h4>
 
-<iframe id="player" width="100%" height="560" src="https://www.youtube.com/embed/oHCn9S15dF0?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="col s12 l12">
+      <h4 class="center">Warm Up</h4>
+      <iframe id="player" width="100%" height="560" src="https://www.youtube.com/embed/MncQw-H3MPU?enablejsapi=1"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
 </div>
 
-<div class="col s12 l6">
-  <h4 class="center">Warm Up</h4>
-  <iframe id="player" width="100%" height="560" src="https://www.youtube.com/embed/MncQw-H3MPU?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div>
 <!-- connect -->
 
   <footer class="page-footer orange darken-3">
@@ -171,8 +144,7 @@ alert("Please make sure all required fields are filled out correctly")
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="https://www.mapmyfitness.com">MAPMYFITNESS</a></li>
-            <li><a class="white-text" href="https://www.mapmyrun.com/"></>MAPMYRUN</li>
-            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="https://www.mapmyrun.com/"></a>MAPMYRUN</li>
           </ul>
         </div>
       </div>
